@@ -31,7 +31,7 @@ Ruby Memos
 ####Inspect directory recursively
 
 	Dir["a_dir/**/*.rb"].each{|s| puts `ruby #{s}` }
-	
+
 ####Loop on array elements
 
 	["apple", "banana", "coconute"].each as |fruit| do
@@ -47,6 +47,13 @@ Inclusive operator `s..e`
 Exclusive operator `s...e`
 
 	(0...3).to_a		#=> [0, 1, 2]
+
+####Raw text
+	
+	long_string = <<<EOF
+	Imagine a really
+	long string here
+	EOF
 	
 ####Remove carriage return characters
 
