@@ -64,3 +64,7 @@ Postgresql Memos
 ####List all the columns of a table
 
 `\d+ tablename`
+
+##Queries
+
+The usual SQL queries. And don'y forget the `;`!
