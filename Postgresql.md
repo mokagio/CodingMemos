@@ -68,3 +68,7 @@ Postgresql Memos
 ##Queries
 
 The usual SQL queries. And don'y forget the `;`!
+
+```sql
+DELETE FROM table WHERE column == some_value; 
+```
