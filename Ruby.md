@@ -58,6 +58,16 @@ Dir["a_dir/**/*.rb"].each{|s| puts `ruby #{s}` }
 end
 ```
 
+####Parse a JSON directly from the web
+
+```ruby
+require 'json'
+require 'net/http'
+
+response = Net::HTTP.get_response "example.com", "/json_api_call"
+json = JSON.parse response.body
+```
+
 ####Range operator
 
 Inclusive operator `s..e`
