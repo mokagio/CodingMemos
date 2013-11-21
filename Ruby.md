@@ -53,9 +53,19 @@ Dir["a_dir/**/*.rb"].each{|s| puts `ruby #{s}` }
 ####Loop on array elements
 
 ```ruby
-["apple", "banana", "coconute"].each as |fruit| do
+["apple", "banana", "coconut"].each as |fruit| do
 	fruit.eat
 end
+
+# or even better
+
+["apple", "banana", "coconut"].each do |fruit|
+	fruit.eat
+end
+
+# on one line
+
+["apple", "banana", "coconut"].each { |fruit| fruit.eat |
 ```
 
 ####Parse a JSON directly from the web
