@@ -11,6 +11,19 @@ iOS Memos
 [viewThatLoadedTheKeyboard resignFirstResponder]
 ```
 
+In a simple configuration with a `UIViewController` which has some `UITextField`s a way to dismiss the keyboard is to make the controller the `delegate` of the inputs and then implement:
+
+```objc
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (textField == self.textFieldThatShouldDismissTheKeyboard) {
+        [textField resignFirstResponder];
+        return NO;
+    } 
+    return YES;
+}
+```
+
 ####Focus on view that loads a user input
 For example a UITextField, which loads the keyboard
 
