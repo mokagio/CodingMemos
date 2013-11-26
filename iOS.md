@@ -55,3 +55,24 @@ iOS Tips
 
 ####Subview superview's center evaluation
 When evaluating the center of the superview, use width / 2, or height / 2, rather than the center property. _Explain why, even if it obvious_
+
+iOS Libraries
+=============
+
+##AFNetworking
+
+####Reading the response headers
+
+```objc
+AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+[manager POST:urlString
+       parameters:paramsDictionary
+          success:^(AFHTTPRequestOperation *operation, id responseObject) {
+              // Log the headers
+              NSLog(@"%@", operation.response.allHeaderFields);
+              
+              //...
+          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+              //...
+          }];
+```
