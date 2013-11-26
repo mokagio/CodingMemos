@@ -7,16 +7,22 @@ iOS Memos
 
 ####Dismiss the keyboard
 
-	[viewThatLoadedTheKeyboard resignFirstResponder]
+```objc
+[viewThatLoadedTheKeyboard resignFirstResponder]
+```
 
 ####Focus on view that loads a user input
 For example a UITextField, which loads the keyboard
 
-	[inputView becomeFirstResponder];
+```objc
+[inputView becomeFirstResponder];
+```
 	
 ####Hide the navigation bar
 
-	aUINavigationControllerInstance.navigationBarHidden = YES;
+```objc
+aUINavigationControllerInstance.navigationBarHidden = YES;
+```
 	
 ####Hide the status bar
 
@@ -26,8 +32,10 @@ In the `Info.plist`, add the entry: **UIStatusBarHidden, YES** or **Status bar i
 
 The height of the UITableViewCells in a table view is actually controlled by the table view itself. Do:
 
-	CGFloat newHeight = 80;
-	tableView.rowHeight = newHeight;
+```objc
+CGFloat newHeight = 80;
+tableView.rowHeight = newHeight;
+```
 	
 iOS Tips
 ========
