@@ -3,4 +3,13 @@ Shell Memos
 
 ####Get file name from path
 
-	basename my/file/path.txt
+```bash
+basename my/file/path.txt
+```
+
+####Grep the content of a folder
+
+```bash
+grep -r "something you want to grep" .
+```
+
