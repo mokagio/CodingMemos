@@ -14,3 +14,9 @@ static CGFloat arrayOfFloats[] = { 1.1, 2.2, 3.3 };
 typedef void (^Callback)();
 typedef void (^CallbackWithParameter)(NSObject *aParameter);
 ```
+
+###Using a block as a method argument
+
+```obj-c
+- (void)methodWithBlockAsParameter:(void(^)())block;
+```
