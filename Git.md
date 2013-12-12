@@ -1,6 +1,12 @@
 Git Memos
 =========
 
+####List tags with message
+
+```bash
+git tag -n
+```
+
 ####Pull a new branch
 
 ```bash
