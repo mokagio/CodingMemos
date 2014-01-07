@@ -27,3 +27,15 @@ _Warning: always think about it twice before deleting a branch_
 git branch -d obsolete_branch               # locally
 git push origin --delete obsolete_branch    # from the server (origin)
 ```
+
+####Rename a branch
+
+To rename the current branch
+```bash
+git branch -m <new_name>
+```
+
+To rename any branch
+```bash
+git branch -m <branch_name> <new_name>
+```
