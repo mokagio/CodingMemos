@@ -7,6 +7,13 @@ Git Memos
 git tag -n
 ```
 
+#### Delete a tag
+
+```bash
+git tag -d TAG
+git push --delete origin TAG
+```
+
 ####Pull a new branch
 
 ```bash
