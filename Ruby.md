@@ -68,6 +68,14 @@ end
 ["apple", "banana", "coconut"].each { |fruit| fruit.eat |
 ```
 
+#### Paste into clipboard
+
+_quite useful when writing text formatting scripts_
+
+```ruby
+IO.popen('pbcopy', 'w').puts "Text that will be available to paste"
+````
+
 ####Parse a JSON directly from the web
 
 ```ruby
