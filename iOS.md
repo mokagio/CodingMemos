@@ -40,6 +40,15 @@ aUINavigationControllerInstance.navigationBarHidden = YES;
 ####Hide the status bar
 
 In the `Info.plist`, add the entry: **UIStatusBarHidden, YES** or **Status bar is initally hidden, YES**.	
+
+#### Open link in Safari
+
+```
+NSURL *url = [NSURL URLWithString:@"http://www.stackoverflow.com"];
+if (![[UIApplication sharedApplication] openURL:url]) {
+    NSLog(@"%@%@",@"Failed to open url:",[url description]);
+}
+```
 	
 ####UITableViewCell height
 
