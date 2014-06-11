@@ -49,6 +49,12 @@ if (![[UIApplication sharedApplication] openURL:url]) {
     NSLog(@"%@%@",@"Failed to open url:",[url description]);
 }
 ```
+
+#### "Rate the App"
+
+```objc
+[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://itunes.apple.com/app/id<#app id#>"]];
+```
 	
 ####UITableViewCell height
 
