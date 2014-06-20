@@ -64,6 +64,14 @@ The height of the UITableViewCells in a table view is actually controlled by the
 CGFloat newHeight = 80;
 tableView.rowHeight = newHeight;
 ```
+
+Xcode Memos
+===========
+
+#### Templates folder location
+
+* **Xcode 5:** `/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/File\ Templates/`
+* **Xcode 6:** `/Applications/Xcode6-Beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates`
 	
 iOS Tips
 ========
