@@ -1,0 +1,13 @@
+Sublime Text Memos
+==================
+
+#### Syntax Specific Settings
+
+Go to Preferences > Settings - More > Syntax Specific - User
+
+```json
+{
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true
+}
+```
